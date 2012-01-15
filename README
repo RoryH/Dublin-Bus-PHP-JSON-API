@@ -1,0 +1,15 @@
+Dublin BUS PHP JSON API
+
+Usage:
+
+HTTP request type: GET
+Method: getStops
+=============
+/dbapi.php?o=getStops&route=123
+
+
+HTTP request type: GET
+Method: getStops
+=============
+/dbapi.php?o=getStopTimes&stop=1709
+
