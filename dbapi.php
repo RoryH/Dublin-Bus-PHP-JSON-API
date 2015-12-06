@@ -6,7 +6,7 @@ class dbapi {
 	static $client;
 
 	public function init() {
-		self::$client = new nusoap_client('http://rtpi.dublinbus.biznetservers.com/DublinBusRTPIService.asmx?WSDL', true,'', '', '', '');
+		self::$client = new nusoap_client('http://rtpi.dublinbus.ie/DublinBusRTPIService.asmx?WSDL', true,'', '', '', '');
 		$err = self::$client->getError();
 		if ($err) {
 			header("HTTP/1.1 502 Bad Gateway", true, 502);
